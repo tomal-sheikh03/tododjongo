@@ -1,0 +1,29 @@
+GET /todo/list
+
+response 
+[{id:"yyy", title: abc}, {id:"yy4y", title: abc3},{id:"×yyy", title: a4bc}]
+
+=========================
+
+
+POST /todo/create
+body: {title: "jfjfk"}
+
+response
+{message: successfully submitted to DB}
+
+
+=========================
+
+
+PUT /todo/3
+body: {title: "jrifj"}
+response 
+{message: successfully updated}
+
+
+=========================
+
+DELETE /todo/3
+response
+{message: "delete successfully"}
