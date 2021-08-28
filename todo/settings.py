@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'todo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'djongo',
+        'NAME': 'todoDjango',
+        'ENFORCE_SCHEMA': False,
+        'CLIENT': {
+            'host': 'mongodb+srv://wahidtomal:1234567890@tododjango.vnvjk.mongodb.net/test?ssl=true&ssl_cert_reqs=CERT_NONE'
+        }
     }
 }
 
